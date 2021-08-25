@@ -7,7 +7,6 @@ const initialState = {
 export default function (state = initialState, action) {
   switch (action.type) {
     case 'TOGGLE_FAVORITE_VERSE':
-      console.log(state.list.findIndex(e => isEqual(e, action.payload)) > 0);
       return {
         ...state,
         list:
